@@ -15,6 +15,8 @@
 		B69BE7771C12BE260007C571 /* huruhuruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BE7761C12BE260007C571 /* huruhuruTests.swift */; };
 		B69BE7821C12BE260007C571 /* huruhuruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BE7811C12BE260007C571 /* huruhuruUITests.swift */; };
 		B69BE7901C12BE900007C571 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69BE78F1C12BE900007C571 /* CoreMotion.framework */; };
+		B6F0D78F1C2BD46800FEADC8 /* CountSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F0D78E1C2BD46800FEADC8 /* CountSettingViewController.swift */; };
+		B6F0D7911C2BD47500FEADC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F0D7901C2BD47500FEADC8 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B69BE7811C12BE260007C571 /* huruhuruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = huruhuruUITests.swift; sourceTree = "<group>"; };
 		B69BE7831C12BE260007C571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B69BE78F1C12BE900007C571 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B6F0D78E1C2BD46800FEADC8 /* CountSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountSettingViewController.swift; sourceTree = "<group>"; };
+		B6F0D7901C2BD47500FEADC8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 				B69BE7681C12BE260007C571 /* Assets.xcassets */,
 				B69BE76A1C12BE260007C571 /* LaunchScreen.storyboard */,
 				B69BE76D1C12BE260007C571 /* Info.plist */,
+				B6F0D78E1C2BD46800FEADC8 /* CountSettingViewController.swift */,
+				B6F0D7901C2BD47500FEADC8 /* HomeViewController.swift */,
 			);
 			path = huruhuru;
 			sourceTree = "<group>";
@@ -260,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6F0D78F1C2BD46800FEADC8 /* CountSettingViewController.swift in Sources */,
 				B69BE7641C12BE260007C571 /* ViewController.swift in Sources */,
 				B69BE7621C12BE260007C571 /* AppDelegate.swift in Sources */,
+				B6F0D7911C2BD47500FEADC8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +496,7 @@
 				B69BE7881C12BE260007C571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B69BE7891C12BE260007C571 /* Build configuration list for PBXNativeTarget "huruhuruTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +505,7 @@
 				B69BE78B1C12BE260007C571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B69BE78C1C12BE260007C571 /* Build configuration list for PBXNativeTarget "huruhuruUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +514,7 @@
 				B69BE78E1C12BE260007C571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

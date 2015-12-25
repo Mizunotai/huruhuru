@@ -11,6 +11,10 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    //var globalStrings01:String? = nil
+    
+    var number:Int = 0
+    
     var window: UIWindow?
 
 
