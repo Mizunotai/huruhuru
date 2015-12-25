@@ -13,7 +13,7 @@ import UIKit
 class CountSettingViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet var pickers: UIPickerView!
-    var itiArray:[Int] = ([Int])(1...8)
+    var itiArray:[Int] = ([Int])(0...9)
     var juArray:[Int] = ([Int])(0...9)
     var hyakuArray:[Int] = ([Int])(0...9)
 //    var number:Int!
@@ -26,7 +26,7 @@ class CountSettingViewController: UIViewController, UIPickerViewDelegate, UIPick
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        iti = 1
+        iti = 0
         ju = 0
         hyaku = 0
         
@@ -75,8 +75,8 @@ class CountSettingViewController: UIViewController, UIPickerViewDelegate, UIPick
         func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
             
             if (component == 0){
-                print("iti列: \(row)")
-                print("iti値: \(hyakuArray[row])")
+                print("hyaku列: \(row)")
+                print("hyaku値: \(hyakuArray[row])")
                 hyaku = hyakuArray[row]*100
                 print(hyaku)
             }else if (component == 1){
@@ -85,13 +85,16 @@ class CountSettingViewController: UIViewController, UIPickerViewDelegate, UIPick
                 ju = juArray[row]*10
                 print(ju)
             }else if (component == 2){
-                print("hyaku列: \(row+1)")
-                print("hyaku値: \(itiArray[row+1])")
+                print("iti列: \(row)")
+                print("iti値: \(itiArray[row])")
                 iti = itiArray[row]
                 print(iti)
             }
             
             app.number = iti + ju + hyaku
+            
+            
+           
             print(app.number)
         }
         

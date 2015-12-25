@@ -1,19 +1,32 @@
 //
-//  HomeViewController.swift
+//  TimeResoltViewController.swift
 //  huruhuru
 //
-//  Created by 大氣 on 2015/12/24.
+//  Created by 大氣 on 2015/12/25.
 //  Copyright © 2015年 Taiki. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class TimeResoltViewController: UIViewController {
+    
+    var app:AppDelegate =
+    (UIApplication.sharedApplication().delegate as! AppDelegate)
 
+    @IBOutlet var timeLable:UILabel!
+    @IBOutlet var resoltLable:UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        timeLable.text = String("\(app.moto)秒間に")
+        resoltLable.text = String("\(app.count)回振りました")
+        timeLable.textAlignment = .Right
+        resoltLable.textAlignment = .Right
+        timeLable.font = UIFont.systemFontOfSize(30)
+        timeLable.font = UIFont.systemFontOfSize(30)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,4 +44,5 @@ class HomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 }

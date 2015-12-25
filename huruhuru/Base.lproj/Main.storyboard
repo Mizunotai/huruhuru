@@ -72,6 +72,50 @@
             </objects>
             <point key="canvasLocation" x="720.5" y="258.5"/>
         </scene>
+        <!--Count Resolt View Controller-->
+        <scene sceneID="ohP-5a-4aH">
+            <objects>
+                <viewController storyboardIdentifier="resolt" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yDI-zO-ju6" customClass="CountResoltViewController" customModule="huruhuru" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fzN-i0-eJN"/>
+                        <viewControllerLayoutGuide type="bottom" id="N6g-71-Cwp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dSh-Hh-7U9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="回振るのに" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7n-Zs-17z">
+                                <rect key="frame" x="0.0" y="133" width="215" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="秒かかりました。" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeY-AT-fvI">
+                                <rect key="frame" x="0.0" y="270" width="375" height="111"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gW-DV-44W">
+                                <rect key="frame" x="114" y="509" width="147" height="68"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="Cvr-1J-zh4" kind="modal" id="vaf-9W-iDw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="numberLabel" destination="H7n-Zs-17z" id="ydH-PA-Chz"/>
+                        <outlet property="resoltLabel" destination="YeY-AT-fvI" id="cMz-mv-kDR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhK-QX-Uzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244.5" y="258.5"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="iln-HZ-00N">
             <objects>
@@ -98,6 +142,9 @@
                                 <color key="backgroundColor" red="1" green="0.88954361910000002" blue="0.068546158110000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Time"/>
+                                <connections>
+                                    <segue destination="nPN-3q-cKj" kind="modal" id="twv-Yi-X7h"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -106,7 +153,124 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WQy-f6-5fv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-127.5" y="264.5"/>
+            <point key="canvasLocation" x="-885.5" y="362.5"/>
+        </scene>
+        <!--Time Setting View Controller-->
+        <scene sceneID="Bph-xR-vEw">
+            <objects>
+                <viewController id="nPN-3q-cKj" customClass="TimeSettingViewController" customModule="huruhuru" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7hk-9W-axG"/>
+                        <viewControllerLayoutGuide type="bottom" id="DZg-bd-V8y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BxG-ik-xbE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JCW-dV-RWa">
+                                <rect key="frame" x="0.0" y="130" width="375" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccD-F3-R0y">
+                                <rect key="frame" x="63" y="420" width="249" height="111"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="スタート">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="510-BQ-iHT" kind="modal" id="mXk-ij-a77"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="picker" destination="JCW-dV-RWa" id="PRq-nE-rsv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8iV-gs-4PV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-409.5" y="-362.5"/>
+        </scene>
+        <!--Ime Play View Controller-->
+        <scene sceneID="xnJ-EY-Mws">
+            <objects>
+                <viewController id="510-BQ-iHT" customClass="TImePlayViewController" customModule="huruhuru" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SDQ-dX-D7r"/>
+                        <viewControllerLayoutGuide type="bottom" id="gdy-Sd-z1g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zFH-0h-Mp9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxx-Z8-hcM">
+                                <rect key="frame" x="100" y="201" width="174" height="187"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="73"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="label" destination="Xxx-Z8-hcM" id="ONj-Bd-Y8p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I07-Y7-U8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204.5" y="-451.5"/>
+        </scene>
+        <!--Time Resolt View Controller-->
+        <scene sceneID="sWs-L0-nRt">
+            <objects>
+                <viewController storyboardIdentifier="time" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MFy-Bf-Pwy" customClass="TimeResoltViewController" customModule="huruhuru" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ohm-Zx-smH"/>
+                        <viewControllerLayoutGuide type="bottom" id="NKo-8k-CfK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1k8-0w-HKe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="秒間に" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpS-eT-g6v">
+                                <rect key="frame" x="0.0" y="69" width="250" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="回振りました" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oH-BA-fNv">
+                                <rect key="frame" x="39" y="212" width="336" height="112"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJ7-Ky-vju">
+                                <rect key="frame" x="82" y="409" width="211" height="122"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cvr-1J-zh4" kind="modal" id="TaD-kT-ADN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="resoltLable" destination="6oH-BA-fNv" id="Zy6-34-BGS"/>
+                        <outlet property="timeLable" destination="NpS-eT-g6v" id="Xcn-x3-niY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CaU-al-3tw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.5" y="-560.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="TaD-kT-ADN"/>
+    </inferredMetricsTieBreakers>
 </document>

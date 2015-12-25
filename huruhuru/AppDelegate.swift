@@ -13,10 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     //var globalStrings01:String? = nil
     
-    var number:Int = 0
-    
+    var number:Int = 1
+    var up :Float = 0.00
+    var time = 1
+     var count = 0
     var window: UIWindow?
-
+    var moto = 0
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
