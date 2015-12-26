@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+ 
 
 
 class CountSettingViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
@@ -18,7 +18,7 @@ class CountSettingViewController: UIViewController, UIPickerViewDelegate, UIPick
     var hyakuArray:[Int] = ([Int])(0...9)
 //    var number:Int!
     var iti,ju,hyaku : Int!
-//    @IBOutlet var button:UIButton!
+    @IBOutlet var button:UIButton!
     // AppDelegateクラスのメンバー変数を参照する
     var app:AppDelegate =
     (UIApplication.sharedApplication().delegate as! AppDelegate)
@@ -33,6 +33,10 @@ class CountSettingViewController: UIViewController, UIPickerViewDelegate, UIPick
         pickers.dataSource = self
         pickers.delegate = self
 
+//        button.animation = "flash"
+//        button.curve = "easeIn"
+//        button.duration = 1.0
+//        button.animate()
         
         // Do any additional setup after loading the view.
     }

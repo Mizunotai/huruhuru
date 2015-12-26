@@ -1,0 +1,6 @@
+framework module Pods_huruhuru {
+  umbrella header "Pods-huruhuru-umbrella.h"
+
+  export *
+  module * { export * }
+}

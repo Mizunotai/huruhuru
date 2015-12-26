@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class CountResoltViewController: UIViewController {
     
     var app:AppDelegate =
@@ -20,7 +21,7 @@ class CountResoltViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         numberLabel.text = String("\(app.number)回振るのに")
-        resoltLabel.text = String("\(app.up)秒かかりました")
+        resoltLabel.text = String(format:"%.2f秒かかりました",app.up)
         
         numberLabel.font = UIFont.systemFontOfSize(30)
         resoltLabel.font = UIFont.systemFontOfSize(30)
@@ -32,6 +33,7 @@ class CountResoltViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
     
 

@@ -63,7 +63,7 @@ class ViewController: UIViewController {
             self.y = Float ((data?.acceleration.y)!)
             if self.y >= 2 || self.y <= -2{
                 self.app.count++
-                NSLog("%d", self.count)
+                NSLog("%d", self.app.count)
                 
             }
             
